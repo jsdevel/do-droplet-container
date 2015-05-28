@@ -4,11 +4,15 @@
 
 __[nscale]__ is an open toolkit supporting configuration, build and deployment of connected container sets. __nscale__ is ideally used to support the development and operation of __microservice__ based systems.
 
-# Amazon Machine Image Container
-Manages the creation, deployment, linking and unlinking of an Amazon Machine Image for __nscale__. The
-aws-ami-container is used internally by __nscale__, see __nscale__'s [documentation] for information on how
-to deploy using Amazon Web Services as the target platform.
+# Digital Ocean Droplet Container
+Manages the creation and deployment of a Digital Ocean Droplet for __nscale__. The
+`do-droplet-container` is used internally by __nscale__, see __nscale__'s [documentation] for information on how
+to deploy using Digitel Ocean as the target platform.
 
+## Running the Tests
+
+Define `TOKEN` in your env.  This is your Digital Ocean API token.  Then run
+`npm t`.
 
 ## License
 Copyright (c) 2014-2015 [nearForm] and other contributors

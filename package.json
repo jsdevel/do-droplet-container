@@ -1,36 +1,45 @@
 {
-  "name": "aws-ami-container",
-  "description": "nscale aws ami container",
+  "name": "do-droplet-container",
+  "description": "nscale digital ocean do droplet container",
   "keywords": [
     "nearForm",
     "nscale",
     "deployer",
     "docker",
     "container",
-    "aws",
-    "ami",
-    "ec2"
+    "digital",
+    "ocean",
+    "droplet",
+    "droplets"
   ],
-  "version": "0.16.0",
+  "version": "0.1.0",
   "license": "Artistic License 2.0",
-  "author": "Peter Elger (http://nearform.com/)",
+  "author": "Joe Spencer (http://nearform.com/)",
   "contributors": [
-    "Peter Elger <elger.peter@gmail.com> (http://peterelger.com/)",
-    "Matteo Collina <matteo.collina@nearform.com>"
+    "Joe Spencer <js.developer.undefined@gmail.com>"
   ],
   "main": "lib/container",
   "engines": {
     "node": "*"
   },
   "dependencies": {
-    "aws-sdk": "~2.0.15",
+    "digital-ocean-api": "0.1.x",
     "bunyan": "~1.0.0",
-    "lodash": "^2.4.1",
     "nscale-util": "~0.12.0"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/nearform/aws-ami-container.git"
+    "url": "https://github.com/jsdevel/do-droplet-container.git"
   },
-  "devDependencies": {}
+  "scripts": {
+    "test": "mocha -w -r ./test/helpers/test-config.js './test/**/*.specs.js'"
+  },
+  "devDependencies": {
+    "chai": "^2.3.0",
+    "mocha": "^2.2.5"
+  },
+  "peerDependencies": {
+    "async": "*",
+    "lodash": "*"
+  }
 }
