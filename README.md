@@ -11,7 +11,7 @@ to deploy using Digitel Ocean as the target platform.
 
 ## Running the Tests
 
-Define `TOKEN` in your env.  This is your Digital Ocean API token.  Then run
+Define `DO_TOKEN` in your env.  This is your Digital Ocean API token.  Then run
 `npm t`.
 
 ## License
